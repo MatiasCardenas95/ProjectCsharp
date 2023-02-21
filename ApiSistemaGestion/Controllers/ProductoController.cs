@@ -9,6 +9,19 @@ namespace ApiSistemaGestion.Controllers
     [ApiController]
     public class ProductoController : ControllerBase
     {
+        [HttpGet("{id}")]
+        public Producto ObtenerProducto (long id)
+        {
+           return  ManejadorProducto.ObtenerProducto(id);
+        }
+        
+        [HttpGet("{idUsuario}")]
+
+        public List<Producto> obtenerProductos (long idUsuario)
+        {
+            return ManejadorProducto.ObtenerProductos(idUsuario);
+        }
+
         [HttpPost]
         public void CrearProducto (Producto producto) 
         {

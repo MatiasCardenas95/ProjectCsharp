@@ -14,7 +14,7 @@ namespace ApiSistemaGestion.Manejador
 
         public static string cadenaConexion = "Data Source=DESKTOP-DUE7KKA;Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
-        public static Usuario ObtenerUsuario(int IdUsuario)
+        public static Usuario ObtenerUsuario(long IdUsuario)
         {
             Usuario usuario = new Usuario();
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3Wx92gtiKMAtRLCOzN23zZ/6NPubY3s5BI99E62v0HEvwZONTlje/SCqhcZVCCqOhcCj/zOmdgbWJVUq8aypGg==",
+  "dgSpecHash": "WK7akGcz04oZPYXccrztHX4PIWLPa9b4+30wTrdd0OAjOyoxfohInqUqOdXuWlpXL/rv5nBl25sYFoQ63GBSDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matias\\Documents\\GitHub\\ProyectCsharp\\ApiSistemaGestion\\ApiSistemaGestion.csproj",
+  "projectFilePath": "C:\\Users\\matias\\Documents\\GitHub\\ProjectCsharp\\ApiSistemaGestion\\ApiSistemaGestion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matias\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\matias\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

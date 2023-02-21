@@ -688,11 +688,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matias\\Documents\\GitHub\\ProyectCsharp\\ApiSistemaGestion\\ApiSistemaGestion.csproj",
+      "projectUniqueName": "C:\\Users\\matias\\Documents\\GitHub\\ProjectCsharp\\ApiSistemaGestion\\ApiSistemaGestion.csproj",
       "projectName": "ApiSistemaGestion",
-      "projectPath": "C:\\Users\\matias\\Documents\\GitHub\\ProyectCsharp\\ApiSistemaGestion\\ApiSistemaGestion.csproj",
+      "projectPath": "C:\\Users\\matias\\Documents\\GitHub\\ProjectCsharp\\ApiSistemaGestion\\ApiSistemaGestion.csproj",
       "packagesPath": "C:\\Users\\matias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matias\\Documents\\GitHub\\ProyectCsharp\\ApiSistemaGestion\\obj\\",
+      "outputPath": "C:\\Users\\matias\\Documents\\GitHub\\ProjectCsharp\\ApiSistemaGestion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\matias\\AppData\\Roaming\\NuGet\\NuGet.Config",
