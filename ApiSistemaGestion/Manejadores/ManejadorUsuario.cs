@@ -52,7 +52,7 @@ namespace ApiSistemaGestion.Manejador
             return usuario;
 
         }
-
+       
         public static Usuario Login(string nombreUsuario, string pass)
         {
 
@@ -94,6 +94,27 @@ namespace ApiSistemaGestion.Manejador
             return null;
         }
 
+        public static int InsertarUsuario(Usuario usuario)
+        {
+            using (SqlConnection conn = new SqlConnection(cadenaConexion))
+            {
+                SqlCommand comando = new SqlCommand("INSERT INTO Usuario(Nombre, Apellido, NombreUsuario, Contraseña, Mail)" +
+                                                    "VALUES(@nombre, @apellido, @nombreUsuario, @contrasena, @mail)", conn);
+
+                comando.Parameters.AddWithValue("@nombre", usuario.Nombre);
+                comando.Parameters.AddWithValue("@apellido", usuario.Apellido);
+                comando.Parameters.AddWithValue("@nombreUsuario", usuario.NombreUsuario);
+                comando.Parameters.AddWithValue("@contrasena", usuario.Contraseña);
+                comando.Parameters.AddWithValue("@mail", usuario.Mail);
+
+                conn.Open();
+
+                return comando.ExecuteNonQuery();
+
+            }
+        }
+
+
         public static int UpdateUsuario(Usuario usuario)
         {
             using (SqlConnection conn = new SqlConnection(cadenaConexion))
@@ -116,6 +137,30 @@ namespace ApiSistemaGestion.Manejador
                 conn.Open();
 
                 return comando.ExecuteNonQuery();
+            }
+        }
+
+        public static int EliminarUsuario(long idUsuario)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(cadenaConexion))
+            {
+                using (SqlCommand sqlCommand = new SqlCommand())
+                {
+                    sqlCommand.Connection = sqlConnection;
+
+                    sqlCommand.Connection.Open();
+
+                    sqlCommand.CommandText = "DELETE Usuario " +
+                                             "WHERE Id = @idUsuario";
+
+                    sqlCommand.Parameters.AddWithValue("@Id", idUsuario);
+
+                    int registro = sqlCommand.ExecuteNonQuery();
+
+                    sqlCommand.Connection.Close();
+
+                    return registro;
+                }
             }
         }
     }

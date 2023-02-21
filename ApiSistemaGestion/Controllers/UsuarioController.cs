@@ -21,11 +21,23 @@ namespace ApiSistemaGestion.Controllers
             return ManejadorUsuario.Login(nombreUsuario, pass);
         }
 
+        [HttpPost]
+        public void CrearUsuario(Usuario usuario) 
+        {
+            ManejadorUsuario.InsertarUsuario(usuario);
+        }
+
         [HttpPut]
 
         public void ModificarUsuario(Usuario usuario) 
         {
             ManejadorUsuario.UpdateUsuario(usuario);
+        }
+
+        [HttpDelete("{idUsuario}")]
+        public void EliminarUsuario(long idUsuario) 
+        {
+            ManejadorUsuario.EliminarUsuario(idUsuario);
         }
 
     }

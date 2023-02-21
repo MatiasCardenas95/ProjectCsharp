@@ -35,7 +35,7 @@ namespace ApiSistemaGestion.Controllers
         }
 
         [HttpDelete]
-        public string EliminarProducto(int id) 
+        public string EliminarProducto(long id) 
         {
             return ManejadorProducto.EliminarProducto(id) == 1 ? "Se elimino el producto" : "No se pudo eliminar";
         }

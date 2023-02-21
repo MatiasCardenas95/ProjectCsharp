@@ -131,7 +131,7 @@ namespace ApiSistemaGestion.Manejador
             }
         }
 
-        public static int EliminarProducto(int idProducto)
+        public static int EliminarProducto(long idProducto)
         {
             using (SqlConnection sqlConnection = new SqlConnection(cadenaConexion))
             {
